@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: dev_auth_gen_scout_app
+    build: .
+    volumes:
+      - .:/app
+    networks:
+      - dev_auth_gen_scout_network
+
+networks:
+  dev_auth_gen_scout_network:
